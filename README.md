@@ -2,7 +2,7 @@
 
 Written by Jason den Dulk
 
-A template engine adaptor to enable Latte useable with Jayponents.
+A template engine adaptor to enable Jayponents to be used with Latte Templates.
 
 ## Requirements
 
@@ -23,6 +23,7 @@ template adaptor in Component.
 
 ### Examples
 
+```
 use Jaypha\Jayponents\Component;
 use Jaypha\Jayponents\Latte\LatteEngineAdaptor;
 
@@ -35,18 +36,21 @@ Component::setDefaultEngine($adaptor);
 // Can assign template adaptor to individual components.
 $component = new Component();
 $component->setEngine($adaptor);
+```
 
 ## jayp Macro
 
-Within Latte templates, you include a component using 'jayp'
+Within a Latte template, you include a component using 'jayp'
 
 ### Example
 
+```
 {jayp $content}
+```
 
 ## License
 
-Copyright (C) 2017-8 Jaypha.  
+Copyright (C) 2017-9 Jaypha.  
 Distributed under the Boost Software License, Version 1.0.  
 See http://www.boost.org/LICENSE_1_0.txt
 
