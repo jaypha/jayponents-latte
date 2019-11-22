@@ -18,7 +18,7 @@ class LatteEngineAdaptor implements TemplateEngineAdaptor
   {
     $this->engine = $latteEngine;
     $set = new MacroSet($latteEngine->getCompiler());
-    $set->addMacro("jayp", "%node.word->display();");
+    $set->addMacro("jayp", "if (%node.word!==null) %node.word->display();");
   }
 
   function render(Component $component)

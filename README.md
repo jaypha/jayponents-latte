@@ -40,7 +40,8 @@ $component->setEngine($adaptor);
 
 ## jayp Macro
 
-Within a Latte template, you include a component using 'jayp'
+Within a Latte template, you include a component using 'jayp'. It will call the
+'display' method of the object, or do nothing if it is null.
 
 ### Example
 
